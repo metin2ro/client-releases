@@ -1,0 +1,31 @@
+name: 🇷🇴 Traducere / text greșit
+description: Greșeală de traducere, diacritice lipsă, termen inconsecvent sau text netradus.
+title: "[Traducere] "
+labels: ["traducere"]
+body:
+  - type: markdown
+    attributes:
+      value: Scriem „ș” și „ț” cu virgulă (nu „ş/ţ” cu sedilă). Glosarul e în CONTRIBUTING.md.
+  - type: dropdown
+    id: unde
+    attributes:
+      label: Unde apare
+      options: [Joc — interfață, Joc — quest / NPC, Joc — nume item / monstru, Joc — mesaj de sistem, Launcher, Site, Altundeva]
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Textul actual
+    validations:
+      required: true
+  - type: textarea
+    id: propus
+    attributes:
+      label: Textul propus
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / captură de ecran

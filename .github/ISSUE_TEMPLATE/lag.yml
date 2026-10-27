@@ -1,0 +1,32 @@
+name: 🐢 Lag / deconectări / rubber-band
+description: Întârzieri, deconectări sau personajul tras înapoi în timpul mișcării.
+title: "[Rețea] "
+labels: ["retea", "de-triat"]
+body:
+  - type: input
+    id: cand
+    attributes:
+      label: Data și ora (aproximativ)
+      placeholder: 27.10.2026 21:40
+    validations:
+      required: true
+  - type: dropdown
+    id: tip
+    attributes:
+      label: Ce s-a întâmplat
+      options: [Lag general, Deconectare, Personaj tras înapoi (rubber-band), Skill-uri cu întârziere, Altceva]
+    validations:
+      required: true
+  - type: input
+    id: canal
+    attributes:
+      label: Canal și hartă
+  - type: dropdown
+    id: retea
+    attributes:
+      label: Conexiunea ta
+      options: [Cablu, Wi-Fi, Date mobile, VPN]
+  - type: textarea
+    id: detalii
+    attributes:
+      label: Detalii (montură, skill folosit, eveniment în desfășurare)

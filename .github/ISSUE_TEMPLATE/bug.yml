@@ -1,0 +1,50 @@
+name: 🐞 Bug în joc
+description: Ceva nu funcționează cum ar trebui (quest, item, skill, hartă, NPC).
+title: "[Bug] "
+labels: ["bug", "de-triat"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Mulțumim! Caută întâi printre issue-urile existente. **Nu** include parola sau datele contului.
+        Dacă problema poate fi folosită pentru dupe, crash de server sau preluare de cont, **nu continua aici**: raportează privat, conform SECURITY.md.
+  - type: input
+    id: versiune
+    attributes:
+      label: Versiunea clientului
+      placeholder: ex. 1.0.3
+    validations:
+      required: true
+  - type: dropdown
+    id: zona
+    attributes:
+      label: Zona
+      options: [Quest, Item / rafinare, Skill / luptă, PvP / regate, Breaslă, Magazin / schimb, Hartă / NPC, Interfață, Altceva]
+    validations:
+      required: true
+  - type: dropdown
+    id: canal
+    attributes:
+      label: Canalul
+      options: [CH1, CH2, CH3, CH4, Nu știu]
+  - type: textarea
+    id: pasi
+    attributes:
+      label: Pași de reproducere
+      placeholder: |
+        1. Mergi la ...
+        2. Vorbește cu ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: asteptat
+    attributes:
+      label: Ce te așteptai să se întâmple / ce s-a întâmplat
+    validations:
+      required: true
+  - type: textarea
+    id: dovezi
+    attributes:
+      label: Capturi de ecran / video
+      description: Trage fișierele aici. Ascunde numele altor jucători dacă nu sunt relevanți.

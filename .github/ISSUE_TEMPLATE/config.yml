@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Vulnerabilitate de securitate (privat)
+    url: https://github.com/metin2ro/client-releases/security/advisories/new
+    about: Nu raporta vulnerabilități public.
+  - name: 💡 Idei și echilibru
+    url: https://github.com/metin2ro/client-releases/discussions/categories/idei
+    about: Propuneri pentru PvP, evenimente, drop-uri, reguli.
+  - name: ❓ Ajutor la instalare
+    url: https://github.com/metin2ro/client-releases/discussions/categories/ajutor
+    about: Instalare, Wine/Linux, Android.

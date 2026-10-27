@@ -1,0 +1,42 @@
+name: 💥 Crash / clientul nu pornește
+description: Clientul se închide, se blochează sau refuză să pornească.
+title: "[Crash] "
+labels: ["crash", "client", "de-triat"]
+body:
+  - type: input
+    id: versiune
+    attributes:
+      label: Versiunea clientului
+    validations:
+      required: true
+  - type: dropdown
+    id: platforma
+    attributes:
+      label: Platforma
+      options: [Windows 10, Windows 11, Linux (Wine/Proton), Android (Winlator) — experimental, Altceva]
+    validations:
+      required: true
+  - type: dropdown
+    id: moment
+    attributes:
+      label: Când se întâmplă
+      options: [La pornire, La login, La alegerea personajului, În joc, La schimbarea hărții, Altfel]
+    validations:
+      required: true
+  - type: textarea
+    id: mesaj
+    attributes:
+      label: Mesajul de eroare
+      description: |
+        Dacă apare „Manifestul clientului a fost respins” sau „pack respins”, înseamnă că fișierele jocului sunt modificate sau incomplete. Reinstalează din Releases și verifică semnătura.
+  - type: textarea
+    id: log
+    attributes:
+      label: Log (syserr.txt)
+      description: Atașează `syserr.txt` din directorul jocului. Verifică întâi că nu conține date personale.
+      render: text
+  - type: textarea
+    id: sistem
+    attributes:
+      label: Sistem
+      placeholder: procesor, placă video, memorie RAM, antivirus
